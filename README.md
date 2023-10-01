@@ -22,18 +22,18 @@
 
 ## Table of Contents
 
--   [Overview](#overview)
--   [Prerequisites](#prerequisites)
--   [File Structure](#fileStructure)
-    -   [Root Files and Folders](#rootFilesAndFolders)
-    -   [Source Files and Folders](#sourceFilesAndFolders)
--   [Getting Started](#gettingStarted)
--   [Expanding the Project](#expandingTheProject)
-    -   [Reusing Code](#reusingCode)
-    -   [Adding More Pages](#addingMorePages)
-    -   [Navigation via Front Matter](#navigationViaFrontMatter)
-    -   [Configuring the CMS](#configuringTheCms)
--   [Deployment](#deployment)
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [File Structure](#fileStructure)
+  - [Root Files and Folders](#rootFilesAndFolders)
+  - [Source Files and Folders](#sourceFilesAndFolders)
+- [Getting Started](#gettingStarted)
+- [Expanding the Project](#expandingTheProject)
+  - [Reusing Code](#reusingCode)
+  - [Adding More Pages](#addingMorePages)
+  - [Navigation via Front Matter](#navigationViaFrontMatter)
+  - [Configuring the CMS](#configuringTheCms)
+- [Deployment](#deployment)
 
 <a name="overview"></a>
 
@@ -52,14 +52,13 @@ minutes - including CMS hosting.
 
 ## Prerequisites
 
-Only the vanilla web technologies are *required* before using this kit, with some familiarity with Eleventy and Templating Languages also recommended, but not essential. A lot of the leg-work for the non-vanilla technologies has been done for you. If you would like to read up on some of these things, we recommend the following resources:
+Only the vanilla web technologies are _required_ before using this kit, with some familiarity with Eleventy and Templating Languages also recommended, but not essential. A lot of the leg-work for the non-vanilla technologies has been done for you. If you would like to read up on some of these things, we recommend the following resources:
 
 1. If you've never used Nunjucks before, [this excellent article by Hyunbin](https://hyunbinseo.medium.com/nunjucks-settings-for-vs-code-a0da0dc66b95) explains how to set up VSCode to best support Nunjucks, including formatting, syntax highlighting and Emmet.
 2. The [Nunjucks Documentation](https://mozilla.github.io/nunjucks/) provides a complete overview of the Nunjucks syntax - the templating language of choice for this kit. Highly recommended to make the most of this kit.
 3. A more applied article about leveraging Nunjucks/Eleventy to make your code modular can be [found here](https://www.webstoemp.com/blog/modular-code-nunjucks-eleventy/), courtesy of Webstoemp.
 4. The [Eleventy Documentation](https://www.11ty.dev/docs/) is also good to read up on, but not recommended for this kit, as only the simplest features of Eleventy is being used, with most of the configuration already being done for you. Providing you stick to the file structure and guidelines presented in this template, you won't actually need any Eleventy knowledge.
 5. [Decap CMS' docs](https://decapcms.org/docs/intro/) can also be found should you wish to extend the CMS beyond what's in this kit
-
 
 <a name="fileStructure"></a>
 
@@ -98,24 +97,24 @@ Only the vanilla web technologies are *required* before using this kit, with som
 
 ### Root Files and Folders
 
--   public/ - Built, ready to deploy files live here. Do not work in here, only your hosting provider needs to make use of this folder.
--   src/ - Raw, source code. The folder you work in.
--   .eleventy.js - Eleventy config file, already set up for you.
--   netlify.toml - Netlify config file for a seamless deployment.
+- public/ - Built, ready to deploy files live here. Do not work in here, only your hosting provider needs to make use of this folder.
+- src/ - Raw, source code. The folder you work in.
+- .eleventy.js - Eleventy config file, already set up for you.
+- netlify.toml - Netlify config file for a seamless deployment.
 
 <a name="sourceFilesAndFolders"></a>
 
 ### Source Files and Folders
 
--   data/ - Global data accessible across the project. Fill out client.json before you begin.
--   includes/ - For reusable code across the project. Split into page-wide layouts and smaller, intra-page components.
--   admin/ - DecapCMS' folder. Includes a config file and index.html entry point.
--   assets/ - Non-HTML files. Images, scripts and styles.
--   content/ - Pages or data to render pages from, such as the blog.
--   \_redirects - To configure redirects. Read more on <a href="https://docs.netlify.com/routing/redirects/">Netlify</a>
--   index.html - Home page
--   robots.txt - Instructions for site crawlers. Learn more, and generate your own, <a href="https://en.ryte.com/free-tools/robots-txt-generator/">here</a>
--   sitemap.xml - A map of the pages on the domain. Create your own after deployment <a href="https://www.xml-sitemaps.com/">here</a>
+- data/ - Global data accessible across the project. Fill out client.json before you begin.
+- includes/ - For reusable code across the project. Split into page-wide layouts and smaller, intra-page components.
+- admin/ - DecapCMS' folder. Includes a config file and index.html entry point.
+- assets/ - Non-HTML files. Images, scripts and styles.
+- content/ - Pages or data to render pages from, such as the blog.
+- \_redirects - To configure redirects. Read more on <a href="https://docs.netlify.com/routing/redirects/">Netlify</a>
+- index.html - Home page
+- robots.txt - Instructions for site crawlers. Learn more, and generate your own, <a href="https://en.ryte.com/free-tools/robots-txt-generator/">here</a>
+- sitemap.xml - A map of the pages on the domain. Create your own after deployment <a href="https://www.xml-sitemaps.com/">here</a>
 
 <a name="gettingStarted"></a>
 
@@ -152,7 +151,7 @@ The main advantage to using an SSG is it brings components, popularized by JavaS
 used, componentization can be achieved through an <a href="https://mozilla.github.io/nunjucks/templating.html#include">include</a>, if the component is truly
 static, or through a <a href="https://mozilla.github.io/nunjucks/templating.html#macro">macro</a>, if the component needs to change slightly between instances.
 
-For example, there is a call to action at the bottom of most pages. As the text content or styles don't need to change, `{% include "components/cta.html"}` was
+For example, there is a call to action at the bottom of most pages. As the text content or styles don't need to change, `{% include "components/footer.html"}` was
 used. If this wasn't the case, and we wanted the CTA text to change, we'd start to think about using a macro instead.
 
 Note that due to the `_includes` directory being specified in the return section of `.eleventy.js`, we only need to include the directory and file when using
@@ -238,6 +237,6 @@ up as so in the frontend.
 4. Once deployed, click on _Identity_ in the top navigation, then click _Enable Identity_
 5. Invite yourself, and the client, to the site
 6. While in the Identity tab, click the "Settings and usage" button to open the settings options. Then, do the following:
-    - Find "Registration Preferences", click "Edit Settings" and set registration from _Public_ to _Invite Only_
-    - Find "Enable Providers" and add a provider. We recommend Google, so the client can login with Google in 1 click.
-    - Find "Git Gateway" and enable it
+   - Find "Registration Preferences", click "Edit Settings" and set registration from _Public_ to _Invite Only_
+   - Find "Enable Providers" and add a provider. We recommend Google, so the client can login with Google in 1 click.
+   - Find "Git Gateway" and enable it
