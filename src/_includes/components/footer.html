@@ -1,17 +1,37 @@
 <!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">
+        Ready to transform your online presence? Get in touch today!
+      </h2>
+
+      <a href="/contact" class="cs-button-solid">Contact Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
 <!--                  Footer                      -->
 <!-- ============================================ -->
 
-<footer id="footer">
+<section id="footer-1154">
   <div class="cs-container">
-    <div class="brand-container">
-      <a href="/">
-        <img src="/assets/svgs/logo-white.svg" alt="Onkyoh Web Designs logo" />
+    <div class="cs-top">
+      <a aria-label="go back to home" class="cs-logo" href="{{client.website}}">
+        <img
+          class="cs-logo-img"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/logo-white.svg"
+          alt="logo"
+          width="168"
+          height="48"
+        />
       </a>
-      <p>Unlock your business's web potential today.</p>
-    </div>
-    <div class="cta-container">
-      <a href="/contact" class="cta-button">Get in Touch</a>
       <ul class="cs-ul">
         {% set navPages = collections.all | eleventyNavigation %} {% for entry
         in navPages %}
@@ -21,23 +41,96 @@
         {% endfor %}
       </ul>
     </div>
-    <ul class="contact-container">
-      <li>
-        Email:
-        <a class="cs-link" href="mailTo:{{client.email}}">{{client.email}}</a>
-      </li>
-      <li>
-        Phone:
-        <a class="cs-link" href="tel:{{client.phoneForTel}}"
-          >{{client.phoneFormatted}}</a
+    <div class="cs-bottom">
+      <!--Social-->
+      <!-- <ul class="cs-social">
+        <li class="cs-social-li">
+          <a
+            href=""
+            class="cs-social-link"
+            aria-label="facebook"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-1a.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href=""
+            class="cs-social-link"
+            aria-label="twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-1a.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href=""
+            class="cs-social-link"
+            aria-label="instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-1a.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href=""
+            class="cs-social-link"
+            aria-label="twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-1a.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+      </ul> -->
+      <span class="cs-copyright">
+        © Copyright 2023 -
+        <a href="{{client.website}}" class="cs-copyright-link"
+          >Onkyoh Web Designs</a
         >
-      </li>
-    </ul>
-    <span>
-      © Copyright 2023 - Designed and Developed By
-      <a href="https://www.onkyohwebdesigns.ca" class="cs-link"
-        >Onkyoh Web Designs</a
-      ></span
-    >
+      </span>
+    </div>
   </div>
-</footer>
+</section>

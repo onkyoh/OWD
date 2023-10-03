@@ -1,0 +1,133 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-683 {
+    padding: var(--sectionPadding);
+    /* clips the zigzag graphic so it doesn't cause overflow issues */
+    overflow: hidden;
+
+    .cs-container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: calc(542 / 16 * 1rem);
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+
+    .cs-text {
+      margin-bottom: calc(16 / 16 * 1rem);
+      &:last-of-type {
+        margin-bottom: calc(32 / 16 * 1rem);
+      }
+    }
+
+    .cs-button-solid {
+      font-size: calc(16 / 16 * 1rem);
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      min-width: calc(150 / 16 * 1rem);
+      padding: 0 calc(24 / 16 * 1rem);
+      background-color: var(--primary);
+      border-radius: calc(4 / 16 * 1rem);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: calc(4 / 16 * 1rem);
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    .cs-ul {
+      /* everything inside the image group is in ems so the font size will scale them down.  Font size minimum is tied to view width size, and grows until it reaches 75% of the value on em */
+      font-size: min(2.3vw, 0.75em);
+      width: calc(632 / 16 * 1em);
+      position: relative;
+      display: grid;
+      justify-content: center;
+      align-items: start;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      z-index: 1;
+    }
+    .cs-li {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      border: 0.2rem solid var(--primary);
+      border-radius: 2rem;
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-683 {
+    .cs-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .cs-ul {
+      font-size: min(1.2vw, 1em);
+      flex: none;
+    }
+
+    .cs-graphic {
+      width: calc(983 / 16 * 1em);
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: calc(165 / 16 * 1em);
+      right: calc(-32 / 16 * 1em);
+      z-index: -1;
+    }
+  }
+}
