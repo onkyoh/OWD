@@ -98,6 +98,8 @@
 
     {% include "components/header.html" %}
     <main id="main">{% block body %}{% endblock %}</main>
-    {% include "components/footer.html" %}
+
+    {% if page.url !== '/contact' %} {% include "components/cta.html" %} {%
+    endif %} {% include "components/footer.html" %}
   </body>
 </html>
