@@ -1,16 +1,145 @@
 ---
-title: "Page title for <title> and OG tags"
-description: "Description for <meta> and OG tags"
-preloadImg: "/assets/images/imagename.format"
+title: "Contact"
+description: "Get in touch with Onkyoh Web Designs today to unlock your business's online potential."
+preloadImg: ""
 permalink: "/contact"
 eleventyNavigation:
   key: Contact
-
   order: 1000
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
-<!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+<link rel="stylesheet" href="/assets/css/contact.css" />
 {% endblock %} {% block body %}
-<!-- Page HTML goes here, without a <main> wrapper -->
+
+<section id="int-hero">
+  <h1 id="home-h">Contact</h1>
+</section>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1151">
+  <div class="cs-container">
+    <div class="cs-contact-group">
+      <span class="cs-topper">Get in Touch</span>
+      <h2 class="cs-title">
+        <span class="cs-span">Unlock</span> your Business's
+        <span class="cs-span">Potential</span>
+      </h2>
+      <p class="cs-contact-text">
+        Whether your ready for my to start building your dream website today or
+        you just have a question, I'm all ears. Get in touch and let's chat!
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="/assets/svgs/phone.svg"
+              alt="phone icon"
+              class="cs-icon"
+              width="40"
+              height="40"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Phone</span>
+            <a
+              href="tel:{{client.phoneForTel}}
+                      "
+              class="cs-link"
+              >{{client.phoneFormatted}}
+            </a>
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="/assets/svgs/email.svg"
+              alt="email icon"
+              class="cs-icon"
+              width="40"
+              height="40"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Email</span>
+            <a href="" class="cs-link">onkyohwebdesigns<wbr />@gmail.com</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--Form-->
+    <form
+      class="cs-form"
+      id="cs-form-1151"
+      name="Contact Form"
+      method="post"
+      netlify
+    >
+      <label class="cs-label">
+        Name *
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-1151"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label">
+        Business Name
+        <input
+          class="cs-input"
+          type="text"
+          id="name-1151"
+          name="business name"
+          placeholder="Business Name"
+        />
+      </label>
+      <label class="cs-label cs-email">
+        Email *
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-1151"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label cs-phone">
+        Phone
+        <input
+          class="cs-input"
+          type="number"
+          id="phone-1151"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="cs-label">
+        Message *
+        <textarea
+          class="cs-input cs-textarea"
+          required
+          name="Message"
+          id="message-1151"
+          placeholder="Write message..."
+        ></textarea>
+      </label>
+      <button class="cs-button-solid cs-submit" type="submit">
+        Send Message
+      </button>
+    </form>
+    <!--Bounce Graphic-->
+  </div>
+</section>
+
 {% endblock %}

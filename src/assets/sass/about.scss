@@ -21,6 +21,10 @@
       gap: clamp(3rem, 6vw, 4rem);
     }
 
+    .cs-title {
+      margin: 0 0 1rem;
+    }
+
     .cs-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
@@ -120,8 +124,8 @@
                when that value reaches 1em (16px). Since we want the picture elements to base their
                font size on the parent and not the root, we use ems for this entire section  */
       font-size: min(2.08vw, 0.791em);
-      width: calc(686 / 16 * 1em);
-      height: calc(658 / 16 * 1em);
+      width: calc(571 / 16 * 1em);
+      height: calc(547 / 16 * 1em);
       position: relative;
 
       @keyframes floatAnimation {
@@ -154,13 +158,13 @@
         width: calc(120 / 16 * 1em);
         height: calc(120 / 16 * 1em);
         border-radius: 50%;
-        background: var(--secondary);
+        background: var(--backgroundGradient);
         opacity: 1;
         position: absolute;
         display: block;
-        bottom: calc(100 / 16 * 1em);
+        bottom: calc(50 / 16 * 1em);
         left: calc(0 / 16 * 1em);
-        z-index: 10;
+        z-index: -1;
         animation-name: floatAnimation;
         animation-duration: 6s;
         animation-timing-function: ease-in-out;
@@ -174,7 +178,7 @@
         width: calc(150 / 16 * 1em);
         height: calc(150 / 16 * 1em);
         border-radius: 50%;
-        background: var(--primaryLight);
+        background: var(--backgroundGradient);
         opacity: 1;
         position: absolute;
         display: block;
@@ -191,24 +195,25 @@
     }
 
     .cs-picture {
-      width: calc(630 / 16 * 1em);
-      height: calc(630 / 16 * 1em);
+      width: calc(524 / 16 * 1em);
+      height: calc(524 / 16 * 1em);
       border-radius: 50%;
-      border: 6px solid #fff;
       /* clips the img tag corners */
       overflow: hidden;
       position: absolute;
       top: 0;
       left: 0;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--backgroundGradient);
 
       img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        border-radius: 50%;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1rem);
+        margin: 0;
+        display: block;
       }
     }
 
@@ -216,7 +221,7 @@
       width: calc(220 / 16 * 1em);
       height: calc(220 / 16 * 1em);
       border-radius: 50%;
-      border: 6px solid #fff;
+      border: 0.25rem solid #fff;
       background: var(--backgroundGradient);
       display: flex;
       justify-content: center;
@@ -304,6 +309,11 @@
       align-items: center;
     }
 
+    .cs-text {
+      max-width: calc(650 / 16 * 1rem);
+      margin-bottom: 2rem;
+    }
+
     .cs-card-group {
       width: 100%;
       margin: 0;
@@ -312,7 +322,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: calc(60 / 16 * 1rem);
+      gap: calc(28 / 16 * 1rem);
     }
 
     .cs-item {
@@ -326,10 +336,10 @@
 
     .cs-picture {
       /* 68px - 88px */
-      width: clamp(4.25rem, 7vw, 5.5rem);
-      height: clamp(4.25rem, 7vw, 5.5rem);
+      width: calc(88 / 16 * 1rem);
+      height: calc(88 / 16 * 1rem);
       margin: auto;
-      margin-bottom: calc(32 / 16 * 1rem);
+      margin-bottom: calc(24 / 16 * 1rem);
       border-radius: 50%;
       background: var(--backgroundGradient);
       display: flex;
@@ -344,7 +354,7 @@
       font-weight: 700;
       text-transform: uppercase;
       margin: 0;
-      margin-bottom: calc(8 / 16 * 1rem);
+      margin-bottom: calc(12 / 16 * 1rem);
       color: var(--headerColor);
     }
 
