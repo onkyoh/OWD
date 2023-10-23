@@ -5,7 +5,7 @@
 <header id="cs-navigation">
   <div class="cs-container">
     <!--Nav Logo-->
-    <a href="{{client.domain}}" class="cs-logo" aria-label="back to home">
+    <a href="/" class="cs-logo" aria-label="back to home">
       <img
         src="/assets/svgs/logo-white.svg"
         width="60"
@@ -28,55 +28,46 @@
       <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-          {% set navPages = collections.all | eleventyNavigation %} {# Loop
-          through all pages with a eleventyNavigation in the frontmatter #} {%
-          for entry in navPages %} {# Define a hasChild variable to make it
-          easier to test what links are dropdowns#} {% set hasChild =
-          entry.children.length %} {# If this page is a dropdown, give it the
-          appropriate classes, icons and accessibility attributes#}
-          <li
-            class="cs-li {% if hasChild %} cs-dropdown {% endif %}"
-            {%
-            if
-            hasChild
-            %}
-            tabindex="0"
-            {%
-            endif
-            %}
-          >
-            {# Similarly, if the link is active, apply the necessary classes #}
+          <li class="cs-li">
             <a
-              href="{{ entry.url }}"
-              class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}"
+              href="/"
+              class="cs-li-link {% if page.url == '/' %} cs-active {% endif %}"
             >
-              {{ entry.key }} {% if hasChild %}
-              <img
-                class="cs-drop-icon"
-                src="/assets/svgs/dropdown.svg"
-                alt="dropdown icon"
-                width="15"
-                height="15"
-                decoding="async"
-                aria-hidden="true"
-              />
-              {% endif %}
+              Home
             </a>
-
-            {# Dropdowns have another ul/li set up within the parent li. Render
-            in the same way as a normal link #} {% if hasChild %}
-            <ul class="cs-drop-ul">
-              {% for child in entry.children %}
-              <li class="cs-drop-li">
-                <a href="{{ child.url }}" class="cs-li-link cs-drop-link"
-                  >{{ child.key }}</a
-                >
-              </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
           </li>
-          {% endfor %}
+          <li class="cs-li">
+            <a
+              href="/about"
+              class="cs-li-link {% if page.url == '/about/' %} cs-active {% endif %}"
+            >
+              About
+            </a>
+          </li>
+          <li class="cs-li">
+            <a
+              href="/#portfolio"
+              class="cs-li-link {% if page.url == '/#portfolio/' %} cs-active {% endif %}"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li class="cs-li">
+            <a
+              href="/blog"
+              class="cs-li-link {% if page.url == '/blog/' %} cs-active {% endif %}"
+            >
+              Blog
+            </a>
+          </li>
+          <li class="cs-li">
+            <a
+              href="/contact"
+              class="cs-li-link {% if page.url == '/contact/' %} cs-active {% endif %}"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
