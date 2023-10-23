@@ -29,11 +29,12 @@ eleventyNavigation:
         <span class="cs-span">Potential</span>
       </h2>
       <p class="cs-contact-text">
-        Whether your ready for my to start building your dream website today or
-        you just have a question, I'm all ears. Get in touch and let's chat!
+        Whether your ready to start building your dream website today or you
+        just have a question, I'm all ears. Get in touch and let's chat!
       </p>
       <ul class="cs-ul">
         <li class="cs-li">
+          <a href="tel:{{client.phoneForTel}}" class="cs-contact-link">
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
@@ -47,15 +48,15 @@ eleventyNavigation:
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Phone</span>
-            <a
-              href="tel:{{client.phoneForTel}}
-                      "
+            <span
               class="cs-link"
               >{{client.phoneFormatted}}
-            </a>
+          </span>
           </div>
+        </a>
         </li>
         <li class="cs-li">
+          <a href="mailTo:{{client.email}}" class="cs-contact-link">
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
@@ -69,8 +70,9 @@ eleventyNavigation:
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Email</span>
-            <a href="" class="cs-link">onkyohwebdesigns<wbr />@gmail.com</a>
+            <span class="cs-link">onkyohwebdesigns<wbr />@gmail.com
           </div>
+        </a>
         </li>
       </ul>
     </div>
@@ -98,7 +100,7 @@ eleventyNavigation:
         <input
           class="cs-input"
           type="text"
-          id="name-1151"
+          id="business-name-1151"
           name="business name"
           placeholder="Business Name"
         />

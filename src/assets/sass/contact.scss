@@ -58,15 +58,37 @@
     .cs-li {
       list-style: none;
       display: flex;
+
+      background: #f7f7f7;
+      border-radius: calc(24 / 16 * 1rem);
+      width: calc(clamp(250px, 100%, 400px));
+      * {
+        text-decoration: none;
+      }
+      &:hover {
+        background: var(--backgroundGradient);
+
+        .cs-icon-wrapper {
+          border: 1px solid white;
+        }
+
+        .cs-icon {
+          filter: brightness(1000%) grayscale(1);
+        }
+
+        * {
+          color: #fff;
+        }
+      }
+    }
+
+    .cs-contact-link {
+      display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       gap: calc(20 / 16 * 1rem);
-
-      &:hover {
-        .cs-icon-wrapper {
-          transform: scale(1.1);
-        }
-      }
+      padding: calc(20 / 16 * 1rem);
+      width: 100%;
     }
 
     .cs-header {
@@ -80,23 +102,20 @@
 
     .cs-link {
       font-size: calc(16 / 16 * 1rem);
+      width: 100%;
       line-height: 1.5em;
       text-decoration: none;
-      color: #767676;
       display: block;
       position: relative;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      color: var(--bodyTextColor);
     }
 
     .cs-icon-wrapper {
       width: calc(60 / 16 * 1rem);
       height: calc(60 / 16 * 1rem);
       margin: 0;
+      border: 1px solid #bababa;
       border-radius: 50%;
-      background: var(--backgroundGradient);
       display: flex;
       justify-content: center;
       align-items: center;

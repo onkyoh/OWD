@@ -120,9 +120,6 @@
     }
 
     .cs-image-group {
-      /* scaling entire section down. font-size starts at a min in vw, and stops
-               when that value reaches 1em (16px). Since we want the picture elements to base their
-               font size on the parent and not the root, we use ems for this entire section  */
       font-size: min(2.08vw, 0.791em);
       width: calc(571 / 16 * 1em);
       height: calc(547 / 16 * 1em);
@@ -195,7 +192,7 @@
     }
 
     .cs-picture {
-      width: calc(524 / 16 * 1em);
+      width: calc(519 / 16 * 1em);
       height: calc(524 / 16 * 1em);
       border-radius: 50%;
       /* clips the img tag corners */
@@ -221,7 +218,7 @@
       width: calc(220 / 16 * 1em);
       height: calc(220 / 16 * 1em);
       border-radius: 50%;
-      border: 0.25rem solid #fff;
+      border: 5px solid #fff;
       background: var(--backgroundGradient);
       display: flex;
       justify-content: center;
@@ -287,7 +284,7 @@
 @media only screen and (min-width: 0rem) {
   #why-choose-12 {
     padding: var(--sectionPadding);
-
+    background-color: #f7f7f7;
     .cs-container {
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
@@ -373,6 +370,7 @@
       font-weight: 700;
       text-align: center;
       margin: 0;
+      background: var(--backgroundGradient);
       color: #fff;
       min-width: calc(150 / 16 * 1rem);
       padding: 0 calc(24 / 16 * 1rem);

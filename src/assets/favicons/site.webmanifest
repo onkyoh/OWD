@@ -1,1 +1,20 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+  "name": "Onkyoh Web Designs",
+  "short_name": "OWD",
+  "description": "Maximize your online impact with a hand-coded website for just $150/mo crafted by the best web design service in Toronto",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#21c700",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
