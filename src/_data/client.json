@@ -6,8 +6,8 @@
   "address": {
     "lineOne": "",
     "lineTwo": "",
-    "city": "",
-    "state": "",
+    "city": "Toronto",
+    "state": "ON",
     "zip": "",
     "mapLink": ""
   },

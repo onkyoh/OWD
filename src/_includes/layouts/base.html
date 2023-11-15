@@ -19,11 +19,8 @@
       property="og:url"
       content="https://{{ client.domain }}{{ page.url }}"
     />
-    <meta property="og:image" content="/assets/images/logo-small.png" />
-    <meta
-      property="og:image:secure_url"
-      content="/assets/images/logo-small.png"
-    />
+    <meta property="og:image" content="/assets/images/OWD.png" />
+    <meta property="og:image:secure_url" content="/assets/images/OWD.png" />
 
     <!--Favicons-->
     <link
@@ -75,13 +72,6 @@
 
     {% block head %}{% endblock %}
 
-    <!--For home page, use service keywords for the title, including location for SEO.
-        Other pages should just include the page name.
-        
-        EXAMPLE:
-        Home page - House Painting Contractors | Painters and Co. | TestCity, WA
-        About Page - About us | Painters and Co.
-        -->
     <title>
       {% if page.url == '/'%} {{ title }} | {{ client.name }} | {{
       client.address.city }}, {{ client.address.state }} {% else %} {{ title }}
