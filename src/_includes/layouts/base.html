@@ -69,6 +69,20 @@
     <!-- Sitewide Stylesheets and Scripts -->
     <link rel="stylesheet" href="/assets/css/root.css" />
     <script defer src="/assets/js/nav.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      defer
+      src="https://www.googletagmanager.com/gtag/js?id=G-RYD6CQ5VVW"
+    ></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RYD6CQ5VVW");
+    </script>
 
     {% block head %}{% endblock %}
 
