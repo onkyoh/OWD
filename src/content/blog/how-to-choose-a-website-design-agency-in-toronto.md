@@ -37,8 +37,6 @@ The final step in this entire process is the most important, picking a website d
 
 Pixelcarve is the right choice for a business that needs a unique design and is willing the cough up good money for it. Some appropriate clients include high-end services and sellers who aren't looking for a website to rank high on Google but instead want one that conveys luxury.
 
-
-
 ### Eggs Media
 
 #### https://eggsmedia.com/
@@ -49,8 +47,6 @@ Pixelcarve is the right choice for a business that needs a unique design and is 
 
 While Eggs Media's websites aren't works of art they demonstrate clear adherence to design principles. While the website speeds are held back due the website being made with WordPress, this is not the biggest issue. After looking at their monthly package I discovered that on top of charging a flat price for the website, they charge up to $400 a month for website maintenance. To me this is a clear attempt to sell overpriced add-ons which business owners don't need.
 
-
-
 ### Canadian Website Design
 
 #### https://canadianwebdesigns.ca/
@@ -60,8 +56,6 @@ While Eggs Media's websites aren't works of art they demonstrate clear adherence
 ![Canadian website design page score](/assets/images/blog/screenshot-2024-08-15-at-9.38.35 pm.png)
 
 A quick look at Canadian Website Design's portfolio will show you that this professional agency and their team of developers are going to create a website that looks like a WordPress theme. You will not get a unique design, you will not get a performant website, and you will pay more than you should.
-
-
 
 ### Site Dudes
 
@@ -79,16 +73,10 @@ If you want the cheapest website possible, buy a WordPress theme and host your o
 
 #### 💰 | 🎨🎨 | ⚡⚡⚡
 
-
-
-![Onkyoh Web Designs page speed insight score](/assets/images/blog/screenshot-2024-08-16-at-11.05.50 pm.png)
+![Onkyoh Web Designs page speed insight score](/assets/images/blog/owd-perf.png)
 
 Your business needs a website with a clean and modern design that looks good on everything from mobile phones to computer screens. This website should load as fast as possible in order to rank high on Google and capture every visitors attention. Most all it shouldn't break the bank and it should be taken completely off your hands. This is exactly the type of service I provide with the websites I make.
 
-
-
 I make sure you get your moneys worth with a high quality website that you can be proud of to represent your business digitally. The best part? You don't need to worry about the website at all, I handle everything from analytics, hosting, and updates.
-
-
 
 **When you work with me you work with a developer dedicated to your business, not a business dedicated to making money.**
